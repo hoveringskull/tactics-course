@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://x3cc0dr6fksm"]
+
+[ext_resource type="Script" uid="uid://d4ny4df035cgv" path="res://features/game/game_context.gd" id="1_bp3ee"]
+[ext_resource type="PackedScene" uid="uid://hdya67hcf3al" path="res://features/map/map_context.tscn" id="2_t4pdl"]
+[ext_resource type="PackedScene" uid="uid://3gg16whhw2ah" path="res://features/mission/mission_context.tscn" id="3_ks568"]
+[ext_resource type="PackedScene" uid="uid://dtwpxu3mshbdw" path="res://features/explore/explore_context.tscn" id="4_5fij2"]
+
+[node name="GameContext" type="Node3D" unique_id=1640505465]
+script = ExtResource("1_bp3ee")
+map_context_scene = ExtResource("2_t4pdl")
+mission_context_scene = ExtResource("3_ks568")
+explore_context_scene = ExtResource("4_5fij2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=260383267]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1282113039]
+offset_top = 40.0
+offset_right = 168.0
+offset_bottom = 80.0
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer" unique_id=1652351910]
+layout_mode = 2
+text = "Game Context"
+
+[node name="menu" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=422208396]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Menu"
+
+[node name="map_button" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=687657233]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MAP"
+
+[node name="mission_button" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=1806991886]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MISSION"
+
+[node name="explore_button" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=196086637]
+unique_name_in_owner = true
+layout_mode = 2
+text = "EXPLORE"

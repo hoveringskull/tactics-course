@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dtwpxu3mshbdw"]
+
+[ext_resource type="Script" uid="uid://dwusujryidswc" path="res://features/explore/explore_context.gd" id="1_rb8id"]
+
+[node name="ExploreContext" type="Node3D" unique_id=1911984789]
+script = ExtResource("1_rb8id")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=159559806]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1950481699]
+offset_top = 72.0
+offset_right = 70.0
+offset_bottom = 95.0
+text = "EXPLORE"

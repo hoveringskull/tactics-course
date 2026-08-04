@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://3gg16whhw2ah"]
+
+[ext_resource type="Script" uid="uid://b43cbeesg5mrq" path="res://features/mission/mission_context.gd" id="1_fauyv"]
+
+[node name="MissionContext" type="Node3D" unique_id=323817680]
+script = ExtResource("1_fauyv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1621822922]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=690136363]
+offset_top = 72.0
+offset_right = 70.0
+offset_bottom = 95.0
+text = "MISSION"
