@@ -18,7 +18,6 @@ func build() -> void:
 	_game_state = GameState.new()
 	_game_state.money = 50
 	# Build any services or other variables that we need in this context
-	pass
 	
 func bind_dependencies() -> void:
 	# Pass in and bind any dependencies that this context needs from parent

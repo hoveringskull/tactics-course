@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://v27qm4jdc7o6"]
+
+[ext_resource type="Texture2D" uid="uid://d3bafwfu8lnju" path="res://import/kenney_fantasy-ui-borders/PNG/Default/Border/panel-border-011.png" id="1_3f3j5"]
+
+[node name="fancy_border" type="NinePatchRect" unique_id=1179713497]
+texture = ExtResource("1_3f3j5")
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24

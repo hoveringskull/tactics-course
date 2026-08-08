@@ -3,6 +3,8 @@ class_name RootContext extends Node3D
 @export var main_menu_context_scene: PackedScene
 @export var game_context_scene: PackedScene
 
+var _music_player: AudioStreamPlayer
+
 var _current_context: Node
 
 func _ready() -> void:
@@ -12,7 +14,10 @@ func _ready() -> void:
 
 func build() -> void:
 	# Build any services or other variables that we need in this context
-	pass
+	_music_player = AudioStreamPlayer.new()
+	# TODO: add a music track
+	_music_player.autoplay = true
+	add_child(_music_player)
 	
 func bind_dependencies() -> void:
 	# Pass in and bind any dependencies that this context needs from parent
@@ -35,7 +40,7 @@ func mount_main_menu() -> void:
 		
 	add_child(menu_context)
 	menu_context.build()
-	menu_context.bind_dependencies()
+	menu_context.bind_dependencies(_music_player)
 	menu_context.setup()
 	
 	menu_context.start_game_requested.connect(mount_game)

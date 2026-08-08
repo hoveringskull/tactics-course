@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dp4yk2sb2vi2a"]
+
+[ext_resource type="Script" uid="uid://csqbqibbhhr7i" path="res://features/main_menu/ui_settings_menu.gd" id="1_61iee"]
+[ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="1_g724x"]
+[ext_resource type="PackedScene" uid="uid://v27qm4jdc7o6" path="res://features/ui/fancy_border.tscn" id="1_yh6w7"]
+
+[node name="ui_settings_menu" type="PanelContainer" unique_id=286593882]
+theme = ExtResource("1_g724x")
+script = ExtResource("1_61iee")
+
+[node name="fancy_border" parent="." unique_id=1179713497 instance=ExtResource("1_yh6w7")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1030450797]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=577889214]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=279103611]
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "Settings"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=175320817]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=393043815]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="music_volume_slider" type="HSlider" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1897494781]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 4
+min_value = -5.0
+max_value = 10.0
+
+[node name="back_button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=737305269]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Back"

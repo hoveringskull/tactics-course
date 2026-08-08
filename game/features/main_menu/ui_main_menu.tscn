@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cn4xhibh1vcra"]
+
+[ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="1_h5k50"]
+[ext_resource type="Script" uid="uid://de1k4tv6d70ek" path="res://features/main_menu/ui_main_menu.gd" id="2_srex8"]
+[ext_resource type="PackedScene" uid="uid://v27qm4jdc7o6" path="res://features/ui/fancy_border.tscn" id="2_up4sy"]
+
+[node name="ui_main_menu" type="PanelContainer" unique_id=551663975]
+theme = ExtResource("1_h5k50")
+script = ExtResource("2_srex8")
+
+[node name="fancy_border" parent="." unique_id=1179713497 instance=ExtResource("2_up4sy")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=500626088]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=574090016]
+layout_mode = 2
+
+[node name="play_button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1121362359]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Play"
+
+[node name="load_button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=47627312]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Load"
+
+[node name="settings_button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1767751586]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="quit_button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=689159060]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"

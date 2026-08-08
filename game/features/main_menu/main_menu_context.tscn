@@ -1,22 +1,38 @@
 [gd_scene format=3 uid="uid://d1bnxbwdn6xq7"]
 
 [ext_resource type="Script" uid="uid://dudwx8d6j1xye" path="res://features/main_menu/main_menu_context.gd" id="1_a16ur"]
+[ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="2_av54u"]
+[ext_resource type="PackedScene" uid="uid://cn4xhibh1vcra" path="res://features/main_menu/ui_main_menu.tscn" id="2_e8bqb"]
+[ext_resource type="PackedScene" uid="uid://dp4yk2sb2vi2a" path="res://features/main_menu/ui_settings_menu.tscn" id="4_1nepu"]
 
 [node name="MainMenuContext" type="Node3D" unique_id=1512135459]
 script = ExtResource("1_a16ur")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1796810490]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=420729834]
-offset_top = 40.0
-offset_right = 211.0
-offset_bottom = 80.0
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1937334472]
+offset_right = 336.0
+offset_bottom = 380.0
+theme = ExtResource("2_av54u")
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 72
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
 
-[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer" unique_id=1511981808]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=210164193]
 layout_mode = 2
-text = "Menu Context"
 
-[node name="start_game" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=885852847]
+[node name="label_title" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=1344676119]
+layout_mode = 2
+theme_type_variation = &"TitleScreenLabel"
+text = "Tactics 
+Game"
+
+[node name="ui_main_menu" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=551663975 instance=ExtResource("2_e8bqb")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="ui_settings_menu" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=286593882 instance=ExtResource("4_1nepu")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Go to game"
