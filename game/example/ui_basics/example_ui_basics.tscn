@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://crm50ik234cxc"]
+
+[ext_resource type="Script" uid="uid://bdy33rv6g80mq" path="res://example/ui_basics/example_ui.gd" id="1_dgpep"]
+[ext_resource type="Texture2D" uid="uid://cvs3f2e4hcqvr" path="res://icon.svg" id="2_jpf70"]
+[ext_resource type="Theme" uid="uid://cvv70p1vo0bjj" path="res://example/ui_basics/example_theme.tres" id="3_lipah"]
+[ext_resource type="PackedScene" uid="uid://bms3qddfdfubb" path="res://example/ui_basics/example_name_box.tscn" id="4_lipah"]
+
+[node name="ExampleUiBasics" type="Node3D" unique_id=1073848320]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1413833502]
+script = ExtResource("1_dgpep")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=690929870]
+offset_left = 276.0
+offset_top = 134.0
+offset_right = 662.0
+offset_bottom = 426.0
+texture = ExtResource("2_jpf70")
+expand_mode = 4
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=2006833958]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_lipah")
+
+[node name="GridBoxContainer" type="GridContainer" parent="CanvasLayer/PanelContainer" unique_id=1441284174]
+layout_mode = 2
+theme = ExtResource("3_lipah")
+columns = 2
+
+[node name="name_box" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=847557463 instance=ExtResource("4_lipah")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=302907646]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/PanelContainer/GridBoxContainer/MarginContainer" unique_id=1975612366]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]T[/b]es"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=1895128485]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/GridBoxContainer/MarginContainer2" unique_id=1235914518]
+layout_mode = 2
+text = "Hello!"
+
+[node name="MarginContainer3" type="MarginContainer" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=1469772841]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="unique_named_label" type="Label" parent="CanvasLayer/PanelContainer/GridBoxContainer/MarginContainer3" unique_id=1835477409]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Hello!"
+
+[node name="example_button" type="Button" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=1852879855]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Press me!"
+
+[node name="example_button2" type="Button" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=326610751]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"ButtonCool"
+text = "Press me!"
+
+[node name="example_button3" type="Button" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=1004376264]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Press me!"
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=907935924]
+layout_mode = 2
+
+[node name="MarginContainer5" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=340289741 instance=ExtResource("4_lipah")]
+layout_mode = 2
+
+[node name="MarginContainer6" parent="CanvasLayer/PanelContainer/GridBoxContainer" unique_id=1650455898 instance=ExtResource("4_lipah")]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer" unique_id=2089596693]
+offset_left = 774.0
+offset_top = 79.0
+offset_right = 1276.0
+offset_bottom = 465.0
+texture = ExtResource("2_jpf70")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CanvasLayer" unique_id=1535416701]
+offset_left = 746.0
+offset_top = 495.0
+offset_right = 1048.0
+offset_bottom = 806.0
+texture = ExtResource("2_jpf70")

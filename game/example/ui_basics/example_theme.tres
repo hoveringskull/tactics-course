@@ -1,0 +1,17 @@
+[gd_resource type="Theme" format=3 uid="uid://cvv70p1vo0bjj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0berk"]
+bg_color = Color(0.27058825, 0.5019608, 0.5254902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_51kq0"]
+bg_color = Color(0.63184977, 0.61771876, 0.28523916, 1)
+skew = Vector2(0.37, 0.02)
+corner_radius_top_left = 50
+corner_radius_top_right = 68
+
+[resource]
+Button/font_sizes/font_size = 32
+Button/styles/normal = SubResource("StyleBoxFlat_0berk")
+ButtonCool/base_type = &"Button"
+ButtonCool/font_sizes/font_size = 48
+ButtonCool/styles/normal = SubResource("StyleBoxFlat_51kq0")
