@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cp63md4yu1po0"
+path="res://.godot/imported/arrow_crossbow_bundle.obj-2b6e6b66670de50f67f06a75ce843f88.mesh"
+
+[deps]
+
+files=["res://.godot/imported/arrow_crossbow_bundle.obj-2b6e6b66670de50f67f06a75ce843f88.mesh"]
+
+source_file="res://import/KayKit_Adventurers_2.0_FREE/KayKit_Adventurers_2.0_FREE/Assets/obj/arrow_crossbow_bundle.obj"
+dest_files=["res://.godot/imported/arrow_crossbow_bundle.obj-2b6e6b66670de50f67f06a75ce843f88.mesh", "res://.godot/imported/arrow_crossbow_bundle.obj-2b6e6b66670de50f67f06a75ce843f88.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

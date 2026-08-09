@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://beexonsaa35ob"]
+
+[ext_resource type="PackedScene" uid="uid://bkn0h5syan22p" path="res://import/KayKit_Skeletons_1.1_FREE/KayKit_Skeletons_1.1_FREE/characters/fbx/Skeleton_Rogue.fbx" id="1_t4fal"]
+[ext_resource type="AnimationLibrary" uid="uid://djd8ah7nn820f" path="res://example/3d_characters/character_animations_example.res" id="2_t5ft7"]
+
+[node name="Skeleton_Rogue" unique_id=76426999 instance=ExtResource("1_t4fal")]
+
+[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(75546664) index="0" unique_id=2021202502]
+bones/1/position = Vector3(0.008410764, 0.3780459, 1.2184831e-10)
+bones/1/rotation = Quaternion(-5.3290705e-15, -1.19209275e-07, -6.3527476e-22, 1)
+bones/2/rotation = Quaternion(-0.060599465, -0.13028215, -0.007978078, 0.9895911)
+bones/3/rotation = Quaternion(2.3283067e-09, 3.813899e-09, 6.762068e-10, 1)
+bones/4/position = Vector3(0.24804363, 0.11085701, 0.082581595)
+bones/4/rotation = Quaternion(-0.5777133, -0.2493638, -0.7347096, 0.25350916)
+bones/5/rotation = Quaternion(1.1153536e-08, -3.903733e-08, -0.55024606, 0.8350026)
+bones/7/rotation = Quaternion(-0.19524242, -0.6725356, -0.05316508, 0.7118636)
+bones/8/position = Vector3(-4.4703484e-08, 0.0961251, -0.05750002)
+bones/8/rotation = Quaternion(-2.6341809e-09, 1.5805075e-08, -0.7071068, 0.7071067)
+bones/9/position = Vector3(-0.17668217, 0.11170334, 0.08915418)
+bones/9/rotation = Quaternion(-0.24831934, 0.34150404, 0.8421737, 0.3353446)
+bones/10/rotation = Quaternion(-6.8187758e-09, 5.1140844e-08, 0.57309085, 0.8194919)
+bones/12/rotation = Quaternion(-0.2345841, 0.2234297, -0.11361781, 0.93922335)
+bones/13/position = Vector3(4.4703484e-08, 0.09612523, -0.05750002)
+bones/13/rotation = Quaternion(0.15571049, -0.18945539, 0.6702893, 0.7004093)
+bones/14/rotation = Quaternion(0.08542652, 0.13044138, 0.0047045094, 0.9877577)
+bones/15/rotation = Quaternion(0.99372756, 0.073376715, 0.039186783, 0.07473881)
+bones/16/rotation = Quaternion(0.3502381, 5.866376e-08, -2.436038e-07, 0.93666077)
+bones/17/rotation = Quaternion(-0.59213114, -0.21350114, 0.0538367, 0.7751771)
+bones/18/rotation = Quaternion(4.9251066e-05, 0.92016053, -0.39154133, -1.0971915e-05)
+bones/19/rotation = Quaternion(0.9911833, -0.0392424, -0.011746338, 0.1260076)
+bones/20/rotation = Quaternion(0.3890354, -6.3185226e-08, 2.6253466e-07, 0.9212229)
+bones/21/rotation = Quaternion(-0.6028571, 0.11208675, -0.028075747, 0.78943765)
+bones/22/rotation = Quaternion(-2.5642867e-05, 0.92016506, -0.3915307, 5.8461665e-06)
+
+[node name="Skeleton_Rogue_Cape" parent="Rig_Medium/Skeleton3D" index="0" unique_id=900751776]
+transform = Transform3D(0.9659258, 0.031580124, -0.25688517, -1.3135812e-09, 0.992528, 0.12201622, 0.25881904, -0.11785861, 0.9587085, 0.020252932, 0.9422095, -0.044195592)
+bone_idx = 3
+
+[node name="Skeleton_Rogue_Hood" parent="Rig_Medium/Skeleton3D" index="1" unique_id=1284574000]
+transform = Transform3D(1, -1.1175871e-08, 1.4901161e-08, 7.450581e-09, 0.9987392, -0.05019912, -2.9802322e-08, 0.05019913, 0.9987392, 0.02874156, 1.2089976, -0.07587558)
+bone_idx = 14
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=2083300444]
+libraries/character_animations = ExtResource("2_t5ft7")
+autoplay = &"character_animations/Melee_2H_Idle"

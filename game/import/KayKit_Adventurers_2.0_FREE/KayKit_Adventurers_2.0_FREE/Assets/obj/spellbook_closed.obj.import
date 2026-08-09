@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8vb4italk2bo"
+path="res://.godot/imported/spellbook_closed.obj-6ab897db1850792bae9e8b3736e26a6d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/spellbook_closed.obj-6ab897db1850792bae9e8b3736e26a6d.mesh"]
+
+source_file="res://import/KayKit_Adventurers_2.0_FREE/KayKit_Adventurers_2.0_FREE/Assets/obj/spellbook_closed.obj"
+dest_files=["res://.godot/imported/spellbook_closed.obj-6ab897db1850792bae9e8b3736e26a6d.mesh", "res://.godot/imported/spellbook_closed.obj-6ab897db1850792bae9e8b3736e26a6d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
