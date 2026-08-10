@@ -1,0 +1,337 @@
+[gd_scene format=3 uid="uid://cplst736hp7dj"]
+
+[ext_resource type="PackedScene" uid="uid://cqdwvipqiylyc" path="res://import/KayKit_Adventurers_2.0_FREE/KayKit_Adventurers_2.0_FREE/Characters/fbx/Rogue_Hooded.fbx" id="1_cyjep"]
+[ext_resource type="Animation" uid="uid://dimorgnbcollh" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Cheering.res" id="2_0wy8w"]
+[ext_resource type="Animation" uid="uid://c1siotif0k7l6" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Chop.res" id="3_eyd6s"]
+[ext_resource type="Animation" uid="uid://llvpv5v38xem" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Chopping.res" id="4_h5rrg"]
+[ext_resource type="Animation" uid="uid://dhoyt7lekuici" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Crawling.res" id="5_hg2ga"]
+[ext_resource type="Animation" uid="uid://cfpr3spoi7vsn" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Crouching.res" id="6_7sdno"]
+[ext_resource type="Animation" uid="uid://d00coxfm3w2ub" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Death_A.res" id="7_j78tc"]
+[ext_resource type="Animation" uid="uid://dxpysl3jgl7bf" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Death_A_Pose.res" id="8_4g4vh"]
+[ext_resource type="Animation" uid="uid://c4pyvy4lx0o0n" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Death_B.res" id="9_vu6kd"]
+[ext_resource type="Animation" uid="uid://cnx5ibrbkof1l" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Death_B_Pose.res" id="10_gdmmv"]
+[ext_resource type="Animation" uid="uid://csb8lpsbfpxxe" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Dig.res" id="11_bwbo8"]
+[ext_resource type="Animation" uid="uid://co87iexq2e15v" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Digging.res" id="12_416k6"]
+[ext_resource type="Animation" uid="uid://bxl2dtxi6j5l7" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Dodge_Backward.res" id="13_80keu"]
+[ext_resource type="Animation" uid="uid://bxfh7vla8mt4g" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Dodge_Forward.res" id="14_xn7sb"]
+[ext_resource type="Animation" uid="uid://b21g6y6dkjk8s" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Dodge_Left.res" id="15_vpbny"]
+[ext_resource type="Animation" uid="uid://dcf8ylsosbp8s" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Dodge_Right.res" id="16_ggcdn"]
+[ext_resource type="Animation" uid="uid://56g5j8nt28ff" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/EXPERIMENTAL_Medium_Transform.res" id="17_6rmdu"]
+[ext_resource type="Animation" uid="uid://ci72c5n3g0kkm" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Bite.res" id="18_stt0f"]
+[ext_resource type="Animation" uid="uid://c153lshj18nn3" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Cast.res" id="19_f0ela"]
+[ext_resource type="Animation" uid="uid://b84xd4yq8js0e" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Catch.res" id="20_3klb6"]
+[ext_resource type="Animation" uid="uid://bl31cp30iqkkg" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Idle.res" id="21_8t1oh"]
+[ext_resource type="Animation" uid="uid://cdseml0p7fd3k" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Reeling.res" id="22_cfoc5"]
+[ext_resource type="Animation" uid="uid://da4pd4qm236jd" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Struggling.res" id="23_m6102"]
+[ext_resource type="Animation" uid="uid://d2gbtwo28pkr4" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Fishing_Tug.res" id="24_xsbr2"]
+[ext_resource type="Animation" uid="uid://cdfeji6e5aliw" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Hammer.res" id="25_0ft36"]
+[ext_resource type="Animation" uid="uid://dtjc1wt52g5bv" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Hammering.res" id="26_sl4wj"]
+[ext_resource type="Animation" uid="uid://dw5f8fgykr4s3" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Hit_A.res" id="27_67i2l"]
+[ext_resource type="Animation" uid="uid://b0ye7rfjhnic" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Hit_B.res" id="28_h0mqx"]
+[ext_resource type="Animation" uid="uid://cj1e8m8cing47" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Holding_A.res" id="29_kprk8"]
+[ext_resource type="Animation" uid="uid://cmvj0jycubusu" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Holding_B.res" id="30_iq3xu"]
+[ext_resource type="Animation" uid="uid://qrc58we1bwar" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Holding_C.res" id="31_clpao"]
+[ext_resource type="Animation" uid="uid://dgnvs3v2iys3q" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Idle_A.res" id="32_nxpqg"]
+[ext_resource type="Animation" uid="uid://b28lq3adrtqwt" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Idle_B.res" id="33_xl8gu"]
+[ext_resource type="Animation" uid="uid://nlnobjapy0q0" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Interact.res" id="34_g8nr6"]
+[ext_resource type="Animation" uid="uid://c1cotr8gwnteh" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Jump_Full_Long.res" id="35_o8y6o"]
+[ext_resource type="Animation" uid="uid://br0a2cb67vu8v" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Jump_Full_Short.res" id="36_titdx"]
+[ext_resource type="Animation" uid="uid://d3cknu8afntus" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Jump_Idle.res" id="37_ai41m"]
+[ext_resource type="Animation" uid="uid://3xbs0ue5s0fe" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Jump_Land.res" id="38_gasxy"]
+[ext_resource type="Animation" uid="uid://bgc6voqmy08x1" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Jump_Start.res" id="39_58byh"]
+[ext_resource type="Animation" uid="uid://bexjqlwjdcxys" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Lie_Down.res" id="40_8wia6"]
+[ext_resource type="Animation" uid="uid://pqj2uarwk2tx" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Lie_Idle.res" id="41_30djh"]
+[ext_resource type="Animation" uid="uid://digohhtdhn8v2" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Lie_StandUp.res" id="42_3kbe2"]
+[ext_resource type="Animation" uid="uid://c1knnynqweykv" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Lockpick.res" id="43_et5i1"]
+[ext_resource type="Animation" uid="uid://dg6u8ruypwjbv" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Lockpicking.res" id="44_ss7c5"]
+[ext_resource type="Animation" uid="uid://dmt3eel3s8rmj" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_1H_Attack_Chop.res" id="45_kwif1"]
+[ext_resource type="Animation" uid="uid://135u3x6rxurn" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_1H_Attack_Jump_Chop.res" id="46_le8qk"]
+[ext_resource type="Animation" uid="uid://bw8upjeppfg7u" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_1H_Attack_Slice_Diagonal.res" id="47_osb4m"]
+[ext_resource type="Animation" uid="uid://dcursb6jr7nf1" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_1H_Attack_Slice_Horizontal.res" id="48_lrf1x"]
+[ext_resource type="Animation" uid="uid://db8cvv0cm6pud" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_1H_Attack_Stab.res" id="49_bl5c7"]
+[ext_resource type="Animation" uid="uid://4r0n5i8l03c0" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_2H_Attack_Chop.res" id="50_mfatv"]
+[ext_resource type="Animation" uid="uid://cwu00ei4nnhqa" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_2H_Attack_Slice.res" id="51_eyakx"]
+[ext_resource type="Animation" uid="uid://dqxa7bl5dgwcg" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_2H_Attack_Spin.res" id="52_wvl3x"]
+[ext_resource type="Animation" uid="uid://b3uovvjp5nfdy" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_2H_Attack_Spinning.res" id="53_2ob4j"]
+[ext_resource type="Animation" uid="uid://ctutmy0ot7x7q" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_2H_Attack_Stab.res" id="54_63kfu"]
+[ext_resource type="Animation" uid="uid://bkmkqfjruedac" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_2H_Idle.res" id="55_o3dvr"]
+[ext_resource type="Animation" uid="uid://dmchonb8adveb" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Block.res" id="56_s5ews"]
+[ext_resource type="Animation" uid="uid://cffetflb23isv" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Block_Attack.res" id="57_k6cu3"]
+[ext_resource type="Animation" uid="uid://bcqjsordmgfed" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Block_Hit.res" id="58_eyhbr"]
+[ext_resource type="Animation" uid="uid://dc5qqd80wa1n4" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Blocking.res" id="59_m6l6s"]
+[ext_resource type="Animation" uid="uid://dd3t4adx2yg13" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Dualwield_Attack_Chop.res" id="60_xqk2l"]
+[ext_resource type="Animation" uid="uid://bwkfn0ll51y83" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Dualwield_Attack_Slice.res" id="61_w4fqy"]
+[ext_resource type="Animation" uid="uid://bwlnx1i80b0yf" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Dualwield_Attack_Stab.res" id="62_inrtx"]
+[ext_resource type="Animation" uid="uid://bo33sg6xj5rjb" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Unarmed_Attack_Kick.res" id="63_d4m4e"]
+[ext_resource type="Animation" uid="uid://btgqet7e7k1s7" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Unarmed_Attack_Punch_A.res" id="64_cqhka"]
+[ext_resource type="Animation" uid="uid://dngl7pbrfuc4" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Melee_Unarmed_Idle.res" id="65_ybx43"]
+[ext_resource type="Animation" uid="uid://b5c5t5j7lso54" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/PickUp.res" id="66_2nen8"]
+[ext_resource type="Animation" uid="uid://dhddryq5x1bhd" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Pickaxe.res" id="67_r1qeh"]
+[ext_resource type="Animation" uid="uid://cry3b1romsk5x" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Pickaxing.res" id="68_om12a"]
+[ext_resource type="Animation" uid="uid://cdsideoqnqnah" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Push_Ups.res" id="69_piwts"]
+[ext_resource type="Animation" uid="uid://0rsxtuggnv5i" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_1H_Aiming.res" id="70_612e3"]
+[ext_resource type="Animation" uid="uid://ckmr5vcacn35f" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_1H_Reload.res" id="71_1mmry"]
+[ext_resource type="Animation" uid="uid://cs2rcgb8smhxb" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_1H_Shoot.res" id="72_obaid"]
+[ext_resource type="Animation" uid="uid://bdx7wnr3n84lx" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_1H_Shooting.res" id="73_3sf6v"]
+[ext_resource type="Animation" uid="uid://dscxc73peda4i" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_2H_Aiming.res" id="74_5a4u1"]
+[ext_resource type="Animation" uid="uid://bgc5iuetkwipo" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_2H_Reload.res" id="75_adj0m"]
+[ext_resource type="Animation" uid="uid://bjdvu5k853n2q" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_2H_Shoot.res" id="76_eho5q"]
+[ext_resource type="Animation" uid="uid://mvdbiwo3uk22" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_2H_Shooting.res" id="77_phor1"]
+[ext_resource type="Animation" uid="uid://bto8vuvlug0fh" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Bow_Aiming_Idle.res" id="78_evk62"]
+[ext_resource type="Animation" uid="uid://bixh5qi8547od" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Bow_Draw.res" id="79_h0epf"]
+[ext_resource type="Animation" uid="uid://u02j3035qb7" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Bow_Draw_Up.res" id="80_hxncr"]
+[ext_resource type="Animation" uid="uid://cu0ymql7lsu3v" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Bow_Idle.res" id="81_7tjed"]
+[ext_resource type="Animation" uid="uid://dm4wi1fbxgocn" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Bow_Release.res" id="82_llmnn"]
+[ext_resource type="Animation" uid="uid://cqqqvkfobemh4" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Bow_Release_Up.res" id="83_j4pyj"]
+[ext_resource type="Animation" uid="uid://eqgv3u7mr0xh" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Magic_Raise.res" id="84_l1hx5"]
+[ext_resource type="Animation" uid="uid://dxgcnlw7ynx7x" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Magic_Shoot.res" id="85_oelnp"]
+[ext_resource type="Animation" uid="uid://bu2xsxaxydcpn" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Magic_Spellcasting.res" id="86_b841j"]
+[ext_resource type="Animation" uid="uid://djxiaut1wv5t0" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Magic_Spellcasting_Long.res" id="87_mhcp2"]
+[ext_resource type="Animation" uid="uid://bfdgyn620485l" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Ranged_Magic_Summon.res" id="88_c6bdj"]
+[ext_resource type="Animation" uid="uid://b7su64cphg40t" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Running_A.res" id="89_mvd26"]
+[ext_resource type="Animation" uid="uid://b6fas1k20l8li" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Running_B.res" id="90_c3gd7"]
+[ext_resource type="Animation" uid="uid://b0ye227t5i7nb" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Running_HoldingBow.res" id="91_3404e"]
+[ext_resource type="Animation" uid="uid://w3p6fax44kqt" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Running_HoldingRifle.res" id="92_omw0g"]
+[ext_resource type="Animation" uid="uid://dx7pvl1udmaqb" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Running_Strafe_Left.res" id="93_e4fym"]
+[ext_resource type="Animation" uid="uid://bkoui3okou0fh" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Running_Strafe_Right.res" id="94_m2f3y"]
+[ext_resource type="Animation" uid="uid://bvmxaju21cs1a" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Saw.res" id="95_pplqy"]
+[ext_resource type="Animation" uid="uid://bkk27j2lerspu" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sawing.res" id="96_65lrk"]
+[ext_resource type="Animation" uid="uid://c5njo6idvje2l" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Chair_Down.res" id="97_5ucg1"]
+[ext_resource type="Animation" uid="uid://ci7xm1m1046mm" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Chair_Idle.res" id="98_3p13x"]
+[ext_resource type="Animation" uid="uid://dmamkas3i0qtm" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Chair_StandUp.res" id="99_krokq"]
+[ext_resource type="Animation" uid="uid://bmfimaqpggtkj" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Floor_Down.res" id="100_xyaob"]
+[ext_resource type="Animation" uid="uid://baeqqu2i0k4ip" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Floor_Idle.res" id="101_qfico"]
+[ext_resource type="Animation" uid="uid://cry7dijj02h60" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Floor_StandUp.res" id="102_lu6hu"]
+[ext_resource type="Animation" uid="uid://w7wm45ursnsv" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sit_Ups.res" id="103_82v1o"]
+[ext_resource type="Animation" uid="uid://bcpe4j88t5lqp" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Awaken_Floor.res" id="104_5d4hd"]
+[ext_resource type="Animation" uid="uid://d0ufxuk5bny1y" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Awaken_Floor_Long.res" id="105_cusr6"]
+[ext_resource type="Animation" uid="uid://b20rekqa21288" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Awaken_Standing.res" id="106_ntj2v"]
+[ext_resource type="Animation" uid="uid://dcdc1tfvs8x4p" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Death.res" id="107_v8s3y"]
+[ext_resource type="Animation" uid="uid://d3ox6jch3jpur" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Death_Pose.res" id="108_3386n"]
+[ext_resource type="Animation" uid="uid://dlyjf4vqe0qe" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Death_Resurrect.res" id="109_gewln"]
+[ext_resource type="Animation" uid="uid://gsybsl1xuh2b" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Idle.res" id="110_tx4oo"]
+[ext_resource type="Animation" uid="uid://ctsyqj840gsoo" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Inactive_Floor_Pose.res" id="111_4ghwe"]
+[ext_resource type="Animation" uid="uid://qktiifddi0tp" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Inactive_Standing_Pose.res" id="112_berti"]
+[ext_resource type="Animation" uid="uid://b6oacv8cahca5" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Spawn_Ground.res" id="113_6qhat"]
+[ext_resource type="Animation" uid="uid://brwyn7e3rekfv" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Taunt.res" id="114_exki2"]
+[ext_resource type="Animation" uid="uid://b3081n1ct4qt0" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Taunt_Longer.res" id="115_omwfv"]
+[ext_resource type="Animation" uid="uid://cvsx1sndpvtp6" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Skeletons_Walking.res" id="116_l1vy2"]
+[ext_resource type="Animation" uid="uid://dkyqsybd0lr1w" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Sneaking.res" id="117_vdud5"]
+[ext_resource type="Animation" uid="uid://8vu32obq0bw5" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Spawn_Air.res" id="118_cjbfi"]
+[ext_resource type="Animation" uid="uid://bbg34sh70ugy2" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Spawn_Ground.res" id="119_v6dor"]
+[ext_resource type="Animation" uid="uid://c0hdai6q7v2gn" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/T-Pose.res" id="120_k7i28"]
+[ext_resource type="Animation" uid="uid://bsa62crt5lnew" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Throw.res" id="121_x5kxa"]
+[ext_resource type="Animation" uid="uid://cc5lp4d0yum6q" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Use_Item.res" id="122_anemk"]
+[ext_resource type="Animation" uid="uid://dos1nant587np" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Walking_A.res" id="123_lhncs"]
+[ext_resource type="Animation" uid="uid://btyr8r062frmw" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Walking_B.res" id="124_g5vfq"]
+[ext_resource type="Animation" uid="uid://dyv5o8i8r4753" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Walking_Backwards.res" id="125_cd8kq"]
+[ext_resource type="Animation" uid="uid://dpdo31c6p86vg" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Walking_C.res" id="126_hcvry"]
+[ext_resource type="Animation" uid="uid://b27imkvickrk8" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Waving.res" id="127_3kxmy"]
+[ext_resource type="Animation" uid="uid://bri6fq4qj2k3s" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Work_A.res" id="128_acq85"]
+[ext_resource type="Animation" uid="uid://c8tpgbbyxhnfd" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Work_B.res" id="129_wsn4e"]
+[ext_resource type="Animation" uid="uid://dicfodawnhbdx" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Work_C.res" id="130_3t2fh"]
+[ext_resource type="Animation" uid="uid://brd6xxr1tywa7" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Working_A.res" id="131_hfm7t"]
+[ext_resource type="Animation" uid="uid://bbpdr2bebpd4" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Working_B.res" id="132_qmrq3"]
+[ext_resource type="Animation" uid="uid://buqftljwp855i" path="res://import/KayKit_Character_Animations_1.1/KayKit_Character_Animations_1.1/Animations/fbx/Rig_Medium/Working_C.res" id="133_ek2bq"]
+[ext_resource type="AnimationLibrary" uid="uid://djd8ah7nn820f" path="res://example/3d_characters/character_animations_example.res" id="134_i2y8b"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_02wrf"]
+_data = {
+&"Cheering": ExtResource("2_0wy8w"),
+&"Chop": ExtResource("3_eyd6s"),
+&"Chopping": ExtResource("4_h5rrg"),
+&"Crawling": ExtResource("5_hg2ga"),
+&"Crouching": ExtResource("6_7sdno"),
+&"Death_A": ExtResource("7_j78tc"),
+&"Death_A_Pose": ExtResource("8_4g4vh"),
+&"Death_B": ExtResource("9_vu6kd"),
+&"Death_B_Pose": ExtResource("10_gdmmv"),
+&"Dig": ExtResource("11_bwbo8"),
+&"Digging": ExtResource("12_416k6"),
+&"Dodge_Backward": ExtResource("13_80keu"),
+&"Dodge_Forward": ExtResource("14_xn7sb"),
+&"Dodge_Left": ExtResource("15_vpbny"),
+&"Dodge_Right": ExtResource("16_ggcdn"),
+&"EXPERIMENTAL_Medium_Transform": ExtResource("17_6rmdu"),
+&"Fishing_Bite": ExtResource("18_stt0f"),
+&"Fishing_Cast": ExtResource("19_f0ela"),
+&"Fishing_Catch": ExtResource("20_3klb6"),
+&"Fishing_Idle": ExtResource("21_8t1oh"),
+&"Fishing_Reeling": ExtResource("22_cfoc5"),
+&"Fishing_Struggling": ExtResource("23_m6102"),
+&"Fishing_Tug": ExtResource("24_xsbr2"),
+&"Hammer": ExtResource("25_0ft36"),
+&"Hammering": ExtResource("26_sl4wj"),
+&"Hit_A": ExtResource("27_67i2l"),
+&"Hit_B": ExtResource("28_h0mqx"),
+&"Holding_A": ExtResource("29_kprk8"),
+&"Holding_B": ExtResource("30_iq3xu"),
+&"Holding_C": ExtResource("31_clpao"),
+&"Idle_A": ExtResource("32_nxpqg"),
+&"Idle_B": ExtResource("33_xl8gu"),
+&"Interact": ExtResource("34_g8nr6"),
+&"Jump_Full_Long": ExtResource("35_o8y6o"),
+&"Jump_Full_Short": ExtResource("36_titdx"),
+&"Jump_Idle": ExtResource("37_ai41m"),
+&"Jump_Land": ExtResource("38_gasxy"),
+&"Jump_Start": ExtResource("39_58byh"),
+&"Lie_Down": ExtResource("40_8wia6"),
+&"Lie_Idle": ExtResource("41_30djh"),
+&"Lie_StandUp": ExtResource("42_3kbe2"),
+&"Lockpick": ExtResource("43_et5i1"),
+&"Lockpicking": ExtResource("44_ss7c5"),
+&"Melee_1H_Attack_Chop": ExtResource("45_kwif1"),
+&"Melee_1H_Attack_Jump_Chop": ExtResource("46_le8qk"),
+&"Melee_1H_Attack_Slice_Diagonal": ExtResource("47_osb4m"),
+&"Melee_1H_Attack_Slice_Horizontal": ExtResource("48_lrf1x"),
+&"Melee_1H_Attack_Stab": ExtResource("49_bl5c7"),
+&"Melee_2H_Attack_Chop": ExtResource("50_mfatv"),
+&"Melee_2H_Attack_Slice": ExtResource("51_eyakx"),
+&"Melee_2H_Attack_Spin": ExtResource("52_wvl3x"),
+&"Melee_2H_Attack_Spinning": ExtResource("53_2ob4j"),
+&"Melee_2H_Attack_Stab": ExtResource("54_63kfu"),
+&"Melee_2H_Idle": ExtResource("55_o3dvr"),
+&"Melee_Block": ExtResource("56_s5ews"),
+&"Melee_Block_Attack": ExtResource("57_k6cu3"),
+&"Melee_Block_Hit": ExtResource("58_eyhbr"),
+&"Melee_Blocking": ExtResource("59_m6l6s"),
+&"Melee_Dualwield_Attack_Chop": ExtResource("60_xqk2l"),
+&"Melee_Dualwield_Attack_Slice": ExtResource("61_w4fqy"),
+&"Melee_Dualwield_Attack_Stab": ExtResource("62_inrtx"),
+&"Melee_Unarmed_Attack_Kick": ExtResource("63_d4m4e"),
+&"Melee_Unarmed_Attack_Punch_A": ExtResource("64_cqhka"),
+&"Melee_Unarmed_Idle": ExtResource("65_ybx43"),
+&"PickUp": ExtResource("66_2nen8"),
+&"Pickaxe": ExtResource("67_r1qeh"),
+&"Pickaxing": ExtResource("68_om12a"),
+&"Push_Ups": ExtResource("69_piwts"),
+&"Ranged_1H_Aiming": ExtResource("70_612e3"),
+&"Ranged_1H_Reload": ExtResource("71_1mmry"),
+&"Ranged_1H_Shoot": ExtResource("72_obaid"),
+&"Ranged_1H_Shooting": ExtResource("73_3sf6v"),
+&"Ranged_2H_Aiming": ExtResource("74_5a4u1"),
+&"Ranged_2H_Reload": ExtResource("75_adj0m"),
+&"Ranged_2H_Shoot": ExtResource("76_eho5q"),
+&"Ranged_2H_Shooting": ExtResource("77_phor1"),
+&"Ranged_Bow_Aiming_Idle": ExtResource("78_evk62"),
+&"Ranged_Bow_Draw": ExtResource("79_h0epf"),
+&"Ranged_Bow_Draw_Up": ExtResource("80_hxncr"),
+&"Ranged_Bow_Idle": ExtResource("81_7tjed"),
+&"Ranged_Bow_Release": ExtResource("82_llmnn"),
+&"Ranged_Bow_Release_Up": ExtResource("83_j4pyj"),
+&"Ranged_Magic_Raise": ExtResource("84_l1hx5"),
+&"Ranged_Magic_Shoot": ExtResource("85_oelnp"),
+&"Ranged_Magic_Spellcasting": ExtResource("86_b841j"),
+&"Ranged_Magic_Spellcasting_Long": ExtResource("87_mhcp2"),
+&"Ranged_Magic_Summon": ExtResource("88_c6bdj"),
+&"Running_A": ExtResource("89_mvd26"),
+&"Running_B": ExtResource("90_c3gd7"),
+&"Running_HoldingBow": ExtResource("91_3404e"),
+&"Running_HoldingRifle": ExtResource("92_omw0g"),
+&"Running_Strafe_Left": ExtResource("93_e4fym"),
+&"Running_Strafe_Right": ExtResource("94_m2f3y"),
+&"Saw": ExtResource("95_pplqy"),
+&"Sawing": ExtResource("96_65lrk"),
+&"Sit_Chair_Down": ExtResource("97_5ucg1"),
+&"Sit_Chair_Idle": ExtResource("98_3p13x"),
+&"Sit_Chair_StandUp": ExtResource("99_krokq"),
+&"Sit_Floor_Down": ExtResource("100_xyaob"),
+&"Sit_Floor_Idle": ExtResource("101_qfico"),
+&"Sit_Floor_StandUp": ExtResource("102_lu6hu"),
+&"Sit_Ups": ExtResource("103_82v1o"),
+&"Skeletons_Awaken_Floor": ExtResource("104_5d4hd"),
+&"Skeletons_Awaken_Floor_Long": ExtResource("105_cusr6"),
+&"Skeletons_Awaken_Standing": ExtResource("106_ntj2v"),
+&"Skeletons_Death": ExtResource("107_v8s3y"),
+&"Skeletons_Death_Pose": ExtResource("108_3386n"),
+&"Skeletons_Death_Resurrect": ExtResource("109_gewln"),
+&"Skeletons_Idle": ExtResource("110_tx4oo"),
+&"Skeletons_Inactive_Floor_Pose": ExtResource("111_4ghwe"),
+&"Skeletons_Inactive_Standing_Pose": ExtResource("112_berti"),
+&"Skeletons_Spawn_Ground": ExtResource("113_6qhat"),
+&"Skeletons_Taunt": ExtResource("114_exki2"),
+&"Skeletons_Taunt_Longer": ExtResource("115_omwfv"),
+&"Skeletons_Walking": ExtResource("116_l1vy2"),
+&"Sneaking": ExtResource("117_vdud5"),
+&"Spawn_Air": ExtResource("118_cjbfi"),
+&"Spawn_Ground": ExtResource("119_v6dor"),
+&"T-Pose": ExtResource("120_k7i28"),
+&"Throw": ExtResource("121_x5kxa"),
+&"Use_Item": ExtResource("122_anemk"),
+&"Walking_A": ExtResource("123_lhncs"),
+&"Walking_B": ExtResource("124_g5vfq"),
+&"Walking_Backwards": ExtResource("125_cd8kq"),
+&"Walking_C": ExtResource("126_hcvry"),
+&"Waving": ExtResource("127_3kxmy"),
+&"Work_A": ExtResource("128_acq85"),
+&"Work_B": ExtResource("129_wsn4e"),
+&"Work_C": ExtResource("130_3t2fh"),
+&"Working_A": ExtResource("131_hfm7t"),
+&"Working_B": ExtResource("132_qmrq3"),
+&"Working_C": ExtResource("133_ek2bq")
+}
+
+[node name="Rogue_Hooded" unique_id=174529671 instance=ExtResource("1_cyjep")]
+
+[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(321052679) index="0" unique_id=812771481]
+bones/1/position = Vector3(0.008410764, 0.3780459, 1.2184831e-10)
+bones/1/rotation = Quaternion(-5.3290705e-15, -1.19209275e-07, -6.3527476e-22, 1)
+bones/2/position = Vector3(-7.7539095e-29, 0.1919775, -1.441206e-15)
+bones/2/rotation = Quaternion(-0.060599465, -0.13028215, -0.007978078, 0.9895911)
+bones/3/position = Vector3(-5.6345873e-29, 0.37498796, 3.140439e-15)
+bones/3/rotation = Quaternion(2.3283067e-09, 3.813899e-09, 6.762068e-10, 1)
+bones/4/position = Vector3(0.24804363, 0.11085701, 0.082581595)
+bones/4/rotation = Quaternion(-0.5777133, -0.2493638, -0.7347096, 0.25350916)
+bones/4/scale = Vector3(0.9999998, 0.9999998, 1)
+bones/5/position = Vector3(6.909076e-10, 0.24189736, -9.011383e-10)
+bones/5/rotation = Quaternion(1.1153535e-08, -3.9037346e-08, -0.55024606, 0.8350026)
+bones/5/scale = Vector3(1.0000001, 1, 0.99999994)
+bones/6/position = Vector3(4.714314e-09, 0.2600439, 6.058227e-10)
+bones/6/rotation = Quaternion(-1.8633077e-09, -8.3848875e-09, 0.026658105, 0.99964464)
+bones/6/scale = Vector3(0.9999998, 0.99999994, 1)
+bones/7/position = Vector3(-2.3800844e-09, 0.07382585, 0)
+bones/7/rotation = Quaternion(-0.19524242, -0.6725356, -0.05316508, 0.7118636)
+bones/8/position = Vector3(-4.4703484e-08, 0.0961251, -0.05750002)
+bones/8/rotation = Quaternion(-2.6341769e-09, 1.5805075e-08, -0.7071068, 0.7071067)
+bones/9/position = Vector3(-0.17668217, 0.11170334, 0.08915418)
+bones/9/rotation = Quaternion(-0.24831934, 0.34150404, 0.8421737, 0.3353446)
+bones/9/scale = Vector3(0.9999998, 0.9999998, 1)
+bones/10/position = Vector3(-6.909005e-10, 0.24189736, -9.011383e-10)
+bones/10/rotation = Quaternion(-6.818779e-09, 5.1140837e-08, 0.57309085, 0.8194919)
+bones/10/scale = Vector3(1.0000001, 1, 0.99999994)
+bones/11/position = Vector3(-4.714314e-09, 0.2600439, 6.058227e-10)
+bones/11/rotation = Quaternion(-5.124098e-09, -1.8633084e-09, -0.026658101, 0.99964464)
+bones/11/scale = Vector3(0.9999998, 0.99999994, 1)
+bones/12/position = Vector3(2.3800844e-09, 0.07382585, 0)
+bones/12/rotation = Quaternion(-0.2345841, 0.2234297, -0.11361781, 0.93922335)
+bones/13/position = Vector3(4.4703484e-08, 0.09612523, -0.05750002)
+bones/13/rotation = Quaternion(0.15571049, -0.18945539, 0.6702893, 0.7004093)
+bones/14/position = Vector3(-6.3115034e-30, 0.26879653, 4.441322e-16)
+bones/14/rotation = Quaternion(0.08542652, 0.13044138, 0.0047045094, 0.9877577)
+bones/15/rotation = Quaternion(0.99372756, 0.073376715, 0.039186783, 0.07473881)
+bones/15/scale = Vector3(1, 0.99999994, 1.0000004)
+bones/16/position = Vector3(1.4901158e-08, 0.22707747, -9.15641e-10)
+bones/16/rotation = Quaternion(0.3502381, 5.866376e-08, -2.436038e-07, 0.93666077)
+bones/16/scale = Vector3(1, 1, 0.9999999)
+bones/17/position = Vector3(-2.9802322e-08, 0.14943703, -3.9265022e-09)
+bones/17/rotation = Quaternion(-0.59213114, -0.21350114, 0.0538367, 0.7751771)
+bones/17/scale = Vector3(1, 1, 1.0000001)
+bones/18/position = Vector3(2.9802322e-08, 0.16565003, 1.5157335e-08)
+bones/18/rotation = Quaternion(4.9251066e-05, 0.92016053, -0.39154133, -1.0971915e-05)
+bones/18/scale = Vector3(1, 1.0000004, 1)
+bones/19/rotation = Quaternion(0.9911833, -0.0392424, -0.011746338, 0.1260076)
+bones/19/scale = Vector3(1, 0.99999994, 1.0000004)
+bones/20/position = Vector3(-1.4901158e-08, 0.22707747, -9.15641e-10)
+bones/20/rotation = Quaternion(0.3890354, -6.3185226e-08, 2.6253468e-07, 0.9212229)
+bones/20/scale = Vector3(1, 1, 0.9999999)
+bones/21/position = Vector3(2.9802322e-08, 0.14943703, -3.9265022e-09)
+bones/21/rotation = Quaternion(-0.6028571, 0.11208675, -0.028075747, 0.78943765)
+bones/21/scale = Vector3(1, 1, 1.0000001)
+bones/22/position = Vector3(-2.9802322e-08, 0.16565003, 1.5157335e-08)
+bones/22/rotation = Quaternion(-2.5642868e-05, 0.92016506, -0.3915307, 5.8461655e-06)
+bones/22/scale = Vector3(1, 1.0000004, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=305568496]
+libraries/character_3d_animations = SubResource("AnimationLibrary_02wrf")
+libraries/character_animations_example = ExtResource("134_i2y8b")
+autoplay = &"character_3d_animations/Melee_2H_Idle"

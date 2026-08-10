@@ -4,6 +4,44 @@
 [ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="2_av54u"]
 [ext_resource type="PackedScene" uid="uid://cn4xhibh1vcra" path="res://features/main_menu/ui_main_menu.tscn" id="2_e8bqb"]
 [ext_resource type="PackedScene" uid="uid://dp4yk2sb2vi2a" path="res://features/main_menu/ui_settings_menu.tscn" id="4_1nepu"]
+[ext_resource type="MeshLibrary" uid="uid://hm78vf5ve21v" path="res://features/cosmetic_gridmap/mesh_lib_floors.tres" id="5_bf6fq"]
+[ext_resource type="PackedScene" uid="uid://befvvyejn0bud" path="res://features/props/torch.tscn" id="6_bf6fq"]
+[ext_resource type="MeshLibrary" uid="uid://dr6xqgwb8erhu" path="res://features/cosmetic_gridmap/mesh_lib_walls.tres" id="6_h7rwy"]
+[ext_resource type="Texture2D" uid="uid://bf7bq4e3cuddf" path="res://import/kenney_skyboxes/Skyboxes/skybox-night.png" id="7_h7rwy"]
+[ext_resource type="PackedScene" uid="uid://cplst736hp7dj" path="res://features/3d_character/rogue_hooded.tscn" id="9_a52ka"]
+[ext_resource type="PackedScene" uid="uid://bqvftk686rdk8" path="res://features/3d_character/skeleton_rogue.tscn" id="10_0vioo"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gx6lm"]
+panorama = ExtResource("7_h7rwy")
+
+[sub_resource type="Sky" id="Sky_1438b"]
+sky_material = SubResource("PanoramaSkyMaterial_gx6lm")
+
+[sub_resource type="Environment" id="Environment_hnnho"]
+background_mode = 2
+sky = SubResource("Sky_1438b")
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.02
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1438b"]
+emission_shape = 3
+emission_box_extents = Vector3(2, 2, 2)
+gravity = Vector3(0, -0.01, 0)
+linear_accel_min = -0.5000022
+linear_accel_max = 0.49999776
+scale_min = 0.099999994
+scale_max = 2.0
+turbulence_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k607y"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.24705882)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_hnnho"]
+material = SubResource("StandardMaterial3D_k607y")
+size = Vector2(0.01, 0.01)
 
 [node name="MainMenuContext" type="Node3D" unique_id=1512135459]
 script = ExtResource("1_a16ur")
@@ -36,3 +74,64 @@ layout_mode = 2
 [node name="ui_settings_menu" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=286593882 instance=ExtResource("4_1nepu")]
 unique_name_in_owner = true
 layout_mode = 2
+
+[node name="floor" type="GridMap" parent="." unique_id=1008285264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh_library = ExtResource("5_bf6fq")
+cell_size = Vector3(0.5, 0.5, 0.5)
+cell_scale = 25.0
+data = {
+"cells": PackedInt32Array(0, 0, 786436, 1, 0, 786436, 2, 0, 786436, 3, 0, 786436, 2, 1, 786432, 0, 1, 786436, 1, 1, 786432, 3, 1, 786432, 0, 2, 786436, 1, 2, 786432, 2, 2, 786438, 3, 2, 786438, 0, 3, 786436, 1, 3, 786436, 2, 3, 786436, 3, 3, 786438, 4, 2, 786432, 4, 3, 786436, 4, 0, 786436, 4, 1, 786432, 4, 4, 786436, 5, 0, 786436, 5, 2, 786436, 65535, 0, 786436, 65535, 1, 786436, 0, 4, 786436, 1, 4, 786436, 2, 4, 786438, 3, 4, 786436, 5, 3, 786436, 5, 4, 1376285, 5, 1, 786436, 65535, 3, 786436, 65535, 4, 786436, 65535, 2, 786436, 0, 65535, 786440, 65535, 65535, 786440, 3, 6, 786438, 3, 5, 786438, 2, 5, 786438, 4, 5, 1376285, 4, 6, 1376285, 5, 6, 1376285, 6, 6, 1376285, 6, 65535, 786437, 5, 65535, 786440, 1, 65535, 786440, 2, 65535, 786440, 3, 65535, 786440, 3, 65534, 786440, 4, 65534, 786440, 5, 65534, 786440, 4, 65535, 786440, 2, 65534, 786440, 1, 65534, 786440, 0, 65534, 786440, 65535, 65534, 786440, 6, 65534, 786440, 6, 65533, 786440, 7, 65533, 786440, 7, 65534, 786440, 7, 65535, 786440, 7, 0, 786440, 7, 1, 786440, 7, 2, 786440, 7, 3, 786440, 7, 4, 786440, 7, 5, 786440, 7, 6, 786440, 1, 5, 1376285, 65535, 5, 1376285, 2, 6, 1376285, 5, 5, 786437, 6, 5, 786437, 6, 4, 786437, 6, 1, 786437, 6, 2, 786437, 6, 0, 786437, 6, 3, 786437, 65543, 65534, 786445, 65542, 65534, 786445, 65541, 65534, 786445, 65541, 65533, 786445, 65540, 65533, 786445, 65539, 65533, 786445, 65539, 65534, 786445, 65540, 65534, 786445, 65538, 65533, 786445, 65538, 65534, 786445, 65537, 65534, 786445, 65537, 65533, 786445, 65536, 65534, 786445, 65536, 65533, 786445, 131071, 65533, 786445, 131071, 65534, 786445, 65542, 65533, 786445, 65543, 65533, 786445, 65543, 65532, 786445, 65542, 65531, 786445, 65541, 65531, 786445, 65540, 65531, 786445, 65541, 65532, 786445, 65542, 65532, 786445, 65543, 65531, 786445, 65539, 65531, 786445, 65538, 65531, 786445, 65538, 65532, 786445, 65537, 65531, 786445, 65537, 65532, 786445, 65540, 65532, 786445, 65536, 65531, 786445, 65536, 65532, 786445, 131071, 65532, 786445, 131071, 65531, 786445, 65539, 65532, 786445, 0, 5, 1376280, 1, 6, 1376280, 0, 6, 1376280, 65535, 6, 1376280, 65533, 5, 1376260, 65534, 5, 1376260, 65534, 4, 1376260, 65534, 3, 1376260, 65533, 3, 1376260, 65533, 4, 1376260, 65533, 2, 1376260, 65533, 1, 1376260, 65533, 0, 1376260, 65534, 0, 1376260, 65534, 1, 1376260, 65534, 2, 1376260, 65534, 65535, 1376260, 65533, 65535, 1376260)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="walls" type="GridMap" parent="." unique_id=1815963849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0)
+mesh_library = ExtResource("6_h7rwy")
+cell_size = Vector3(1, 1, 1)
+cell_scale = 25.0
+data = {
+"cells": PackedInt32Array(65535, 0, 1376274, 65535, 1, 1376274, 65535, 2, 1376272, 2, 65535, 786433, 65535, 65535, 1376281, 65538, 65533, 393243, 65539, 65533, 393243, 65537, 65533, 393232, 65536, 65533, 393232, 131071, 2, 1114128, 131071, 0, 1114128, 131071, 65533, 1114135, 196607, 65533, 1114135, 131072, 65533, 786451, 131074, 65533, 786451, 196607, 0, 1376275, 131071, 65535, 1376281, 131071, 65534, 1376281, 131071, 1, 1376281, 196607, 1, 1376276, 196607, 2, 1376296, 131075, 65533, 786472, 262143, 65533, 786456, 262143, 1, 786456, 196610, 65533, 786456, 131073, 65533, 786470, 196607, 65535, 1376294, 196607, 65534, 1376294, 65534, 65535, 1376271, 65534, 0, 1376271, 65534, 1, 1376271, 65534, 2, 1376271)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="diorama_camera" type="Camera3D" parent="." unique_id=930376674]
+unique_name_in_owner = true
+transform = Transform3D(0.7944347, 0.01962984, 0.60703224, 0, 0.99947757, -0.0323205, -0.6073495, 0.025676528, 0.7940197, 2.1037464, 0.42561054, 2.6688135)
+fov = 75.9
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1662739223]
+environment = SubResource("Environment_hnnho")
+
+[node name="torch" parent="." unique_id=710045824 instance=ExtResource("6_bf6fq")]
+transform = Transform3D(1, 0, 0, 0, 0.9513561, -0.30809334, 0, 0.30809334, 0.9513561, 1.1242862, 0, 0.024232998)
+
+[node name="torch3" parent="." unique_id=508068675 instance=ExtResource("6_bf6fq")]
+transform = Transform3D(1, 0, 0, 0, 0.9513561, -0.30809334, 0, 0.30809334, 0.9513561, 2.0184581, 0.97376555, -2.4074082)
+
+[node name="torch4" parent="." unique_id=1865426143 instance=ExtResource("6_bf6fq")]
+transform = Transform3D(1, 0, 0, 0, 0.9513561, -0.30809334, 0, 0.30809334, 0.9513561, 2.9645984, 0.97376555, -2.4074082)
+
+[node name="torch2" parent="." unique_id=1413663968 instance=ExtResource("6_bf6fq")]
+transform = Transform3D(1, 0, 0, 0, 0.9513561, -0.30809334, 0, 0.30809334, 0.9513561, 0.2981518, 0, 0.024232998)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1235301407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8994763, 1.4393914, 1.5991118)
+amount = 94
+lifetime = 4.14
+process_material = SubResource("ParticleProcessMaterial_1438b")
+draw_pass_1 = SubResource("QuadMesh_hnnho")
+
+[node name="FogVolume" type="FogVolume" parent="." unique_id=1743873362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5815551, 0.7783203, -3.5803978)
+size = Vector3(6.922241, 3.5566406, 2)
+
+[node name="FogVolume2" type="FogVolume" parent="." unique_id=1780944763]
+transform = Transform3D(0.04590931, 0, 0.9989456, 0, 1, 0, -0.9989456, 0, 0.04590931, -1.8708124, 0.7783203, -1.0027885)
+size = Vector3(6.922241, 3.5566406, 2)
+
+[node name="Rogue_Hooded" parent="." unique_id=174529671 instance=ExtResource("9_a52ka")]
+transform = Transform3D(0.255, 0, 0, 0, 0.255, 0, 0, 0, 0.255, 0.921, -0.271, 0.4318819)
+
+[node name="Skeleton_Rogue" parent="." unique_id=76426999 instance=ExtResource("10_0vioo")]
+transform = Transform3D(0.16740835, 0, 0.18567295, 0, 0.25, 0, -0.18567295, 0, 0.16740835, -0.68044615, -0.10337776, 0.35098428)
