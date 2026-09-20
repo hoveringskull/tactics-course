@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MissionParameters" format=3 uid="uid://buxrclkgwf0iw"]
+
+[ext_resource type="Script" uid="uid://ds2qropomsj2b" path="res://features/mission/mission_parameters.gd" id="1_4qsjg"]
+
+[resource]
+script = ExtResource("1_4qsjg")
+possibleNames = Array[String](["Kiss frog", "Marry dragon", "Eat lunch", "Defeat the green knight", "Do stuff"])
+possibleDescriptions = Array[String](["Do this task!", "Are you tough enough?", "Big difficult tough thing"])
+metadata/_custom_type_script = "uid://ds2qropomsj2b"

@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://c1ckjotakifk8"]
+
+[ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="1_e6otv"]
+[ext_resource type="PackedScene" uid="uid://v27qm4jdc7o6" path="res://features/ui/fancy_border.tscn" id="2_u3qak"]
+[ext_resource type="Script" uid="uid://buxfiywop05jl" path="res://features/map/mission_list_panel.gd" id="2_wcxyp"]
+
+[node name="mission_list_panel" type="PanelContainer" unique_id=1993139574]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_e6otv")
+script = ExtResource("2_wcxyp")
+
+[node name="fancy_border" parent="." unique_id=1179713497 instance=ExtResource("2_u3qak")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2027258850]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1774765227]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=633488618]
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "Available Missions:"
+
+[node name="available_mission_list" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1825417803]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/available_mission_list" unique_id=1766980493]
+layout_mode = 2
+text = "Name of mission"
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/available_mission_list" unique_id=396019560]
+layout_mode = 2
+text = "Take the princess out to"
+autowrap_mode = 2
+
+[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer/available_mission_list" unique_id=1971677703]
+layout_mode = 2
+text = "Name of mission"

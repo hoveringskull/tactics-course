@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ctugkm14k2tmp"]
+
+[ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="1_1stii"]
+[ext_resource type="Script" uid="uid://b3w81pnpx8fe" path="res://features/map/mission_detail_panel.gd" id="2_0ep6x"]
+[ext_resource type="PackedScene" uid="uid://v27qm4jdc7o6" path="res://features/ui/fancy_border.tscn" id="2_3yq44"]
+
+[node name="mission_detail_panel" type="PanelContainer" unique_id=1471214761]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -136.5
+offset_top = -189.0
+offset_right = 136.5
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_1stii")
+script = ExtResource("2_0ep6x")
+
+[node name="fancy_border" parent="." unique_id=1179713497 instance=ExtResource("2_3yq44")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=708170027]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=141577724]
+layout_mode = 2
+
+[node name="title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=885038509]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Mission Name"
+
+[node name="description" type="Label" parent="MarginContainer/VBoxContainer" unique_id=463486811]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Description"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1055005128]
+layout_mode = 2
+
+[node name="enter_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1813696757]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Enter Mission"
+
+[node name="cancel_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1945365929]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Cancel"

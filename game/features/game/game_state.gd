@@ -1,4 +1,6 @@
 class_name GameState extends Resource
 
-# Temp
-@export var money: int
+signal available_missions_changed(missions: Array[MissionData])
+
+@export var available_missions: Array[MissionData]
+@export var current_mission: MissionData

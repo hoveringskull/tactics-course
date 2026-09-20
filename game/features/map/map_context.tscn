@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://hdya67hcf3al"]
 
 [ext_resource type="Script" uid="uid://dpow6fe1okut2" path="res://features/map/map_context.gd" id="1_gh0an"]
+[ext_resource type="PackedScene" uid="uid://c1ckjotakifk8" path="res://features/ui/mission_list_panel.tscn" id="2_8av2h"]
+[ext_resource type="PackedScene" uid="uid://ctugkm14k2tmp" path="res://features/map/mission_detail_panel.tscn" id="3_wkjl5"]
 
 [node name="MapContext" type="Node3D" unique_id=363677068]
 script = ExtResource("1_gh0an")
@@ -12,3 +14,20 @@ offset_top = 72.0
 offset_right = 70.0
 offset_bottom = 95.0
 text = "MAP"
+
+[node name="mission_list_panel" parent="CanvasLayer" unique_id=1993139574 instance=ExtResource("2_8av2h")]
+unique_name_in_owner = true
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -190.0
+offset_top = -148.5
+offset_right = 0.0
+offset_bottom = 148.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="mission_detail_panel" parent="CanvasLayer" unique_id=1471214761 instance=ExtResource("3_wkjl5")]
+unique_name_in_owner = true
