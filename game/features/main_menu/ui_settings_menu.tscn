@@ -1,11 +1,9 @@
 [gd_scene format=3 uid="uid://dp4yk2sb2vi2a"]
 
 [ext_resource type="Script" uid="uid://csqbqibbhhr7i" path="res://features/main_menu/ui_settings_menu.gd" id="1_61iee"]
-[ext_resource type="Theme" uid="uid://c66vxtmo1q53v" path="res://features/theme/main_theme.tres" id="1_g724x"]
 [ext_resource type="PackedScene" uid="uid://v27qm4jdc7o6" path="res://features/ui/fancy_border.tscn" id="1_yh6w7"]
 
 [node name="ui_settings_menu" type="PanelContainer" unique_id=286593882]
-theme = ExtResource("1_g724x")
 script = ExtResource("1_61iee")
 
 [node name="fancy_border" parent="." unique_id=1179713497 instance=ExtResource("1_yh6w7")]

@@ -28,6 +28,10 @@ gdscript/warnings/unsafe_call_argument=1
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[gui]
+
+theme/custom="uid://c66vxtmo1q53v"
+
 [input]
 
 ui_accept={
