@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://iustjk1ep45w"
+path="res://.godot/imported/hex_coast_C_waterless.obj-ea1aa0b2032fd9cef656f9218ee2c4fb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_coast_C_waterless.obj-ea1aa0b2032fd9cef656f9218ee2c4fb.mesh"]
+
+source_file="res://import/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/tiles/coast/waterless/hex_coast_C_waterless.obj"
+dest_files=["res://.godot/imported/hex_coast_C_waterless.obj-ea1aa0b2032fd9cef656f9218ee2c4fb.mesh", "res://.godot/imported/hex_coast_C_waterless.obj-ea1aa0b2032fd9cef656f9218ee2c4fb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

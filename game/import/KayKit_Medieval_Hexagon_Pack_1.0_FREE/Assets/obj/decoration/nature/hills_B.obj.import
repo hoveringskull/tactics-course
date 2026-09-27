@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cak4n8x4g4hkq"
+path="res://.godot/imported/hills_B.obj-19809acb7bbaaa11ef38ee8cbb5109cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hills_B.obj-19809acb7bbaaa11ef38ee8cbb5109cc.mesh"]
+
+source_file="res://import/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/decoration/nature/hills_B.obj"
+dest_files=["res://.godot/imported/hills_B.obj-19809acb7bbaaa11ef38ee8cbb5109cc.mesh", "res://.godot/imported/hills_B.obj-19809acb7bbaaa11ef38ee8cbb5109cc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bb5j1sf1reg3y"
+path="res://.godot/imported/trees_A_cut.obj-1ec5fd0958fcab07e72f1b700641a7ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trees_A_cut.obj-1ec5fd0958fcab07e72f1b700641a7ae.mesh"]
+
+source_file="res://import/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/decoration/nature/trees_A_cut.obj"
+dest_files=["res://.godot/imported/trees_A_cut.obj-1ec5fd0958fcab07e72f1b700641a7ae.mesh", "res://.godot/imported/trees_A_cut.obj-1ec5fd0958fcab07e72f1b700641a7ae.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

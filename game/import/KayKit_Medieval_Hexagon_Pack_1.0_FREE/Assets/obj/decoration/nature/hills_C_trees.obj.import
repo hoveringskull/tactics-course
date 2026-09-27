@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xxtsc60jw2hb"
+path="res://.godot/imported/hills_C_trees.obj-2f4b82592518f2c1cf8f46aa228c79a2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hills_C_trees.obj-2f4b82592518f2c1cf8f46aa228c79a2.mesh"]
+
+source_file="res://import/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/decoration/nature/hills_C_trees.obj"
+dest_files=["res://.godot/imported/hills_C_trees.obj-2f4b82592518f2c1cf8f46aa228c79a2.mesh", "res://.godot/imported/hills_C_trees.obj-2f4b82592518f2c1cf8f46aa228c79a2.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
