@@ -5,6 +5,7 @@ signal mission_requested(mission: MissionData)
 
 @onready var _ui_mission_list_panel: MissionListPanel = %mission_list_panel
 @onready var _ui_mission_detail_panel: MissionDetailPanel = %mission_detail_panel
+@onready var _map_camera: MapCamera = %map_camera
 
 var _game_state: GameState
 
@@ -17,6 +18,7 @@ var selected_mission: MissionData:
 			return
 		_selected_mission = value
 		selected_mission_updated.emit(value)
+		_map_camera.focus_mission = selected_mission 
 
 
 func build() -> void:
@@ -37,7 +39,7 @@ func setup() -> void:
 	selected_mission_updated.connect(func (mission: MissionData) -> void: _ui_mission_detail_panel.current_mission = mission)
 	_ui_mission_detail_panel.cancelled.connect(handle_details_cancelled)
 	
-	_ui_mission_detail_panel.enter_requested.connect(func () -> void: mission_requested.emit(selected_mission))
+	_ui_mission_detail_panel.enter_requested.connect(handle_enter_requested)
 	
 	_ui_mission_detail_panel.hide()
 	_ui_mission_list_panel.get_focus(null)
@@ -45,3 +47,7 @@ func setup() -> void:
 func handle_details_cancelled() -> void:
 	_ui_mission_list_panel.get_focus(selected_mission)
 	selected_mission = null
+	
+func handle_enter_requested() -> void:
+	await _map_camera.animate_focus_in()
+	mission_requested.emit(selected_mission)

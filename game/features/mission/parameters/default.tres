@@ -6,4 +6,5 @@
 script = ExtResource("1_4qsjg")
 possibleNames = Array[String](["Kiss frog", "Marry dragon", "Eat lunch", "Defeat the green knight", "Do stuff"])
 possibleDescriptions = Array[String](["Do this task!", "Are you tough enough?", "Big difficult tough thing"])
+possibleLocations = Array[Vector3]([Vector3(-2, 0.823, -6.6), Vector3(0, 0, 0), Vector3(-3, 0, 2), Vector3(-7.7, 1.8, -3.4), Vector3(-2, 1, 0)])
 metadata/_custom_type_script = "uid://ds2qropomsj2b"
